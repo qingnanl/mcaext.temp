@@ -312,7 +312,7 @@ compute.spatial.kld.df <- function(spatial.coords, weight_df, n = 10){
         return(klds)
 }
 
-
+# https://stat.ethz.ch/pipermail/r-help/2006-June/107405.html
 kde2d.weighted <- function (x, y, w, h, n, lims = c(range(x), range(y))) {
   nx <- length(x)
   if (length(y) != nx) 
